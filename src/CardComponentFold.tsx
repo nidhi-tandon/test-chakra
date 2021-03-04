@@ -2,6 +2,10 @@ import React from 'react'
 import {Container, Flex} from "@chakra-ui/react"
 import Card from './components/Card';
 
+/* eslint-disable import/no-webpack-loader-syntax */
+// @ts-ignore
+import Content from '!babel-loader!@mdx-js/loader!./Content.mdx'
+
 const customStyles = {
     box: {
         maxWidth: "315px", // overriding default maxWidth
@@ -9,7 +13,7 @@ const customStyles = {
     }
 }
 
-const CardComponent : React.FC = () => {
+const CardComponent: React.FC = () => {
     return (
         <Container maxW="5xl">
             <Flex justifyContent={["center", "space-between"]}
@@ -43,6 +47,9 @@ const CardComponent : React.FC = () => {
                       bgImageSrcHover={"capital-dark-bg.svg"}
                 />
             </Flex>
+            <div className="mdx">
+                <Content />
+            </div>
         </Container>
     );
 }

@@ -72,6 +72,20 @@ const theme: Theme = extendTheme({
     components: {
         Form,
     },
+    styles: {
+        global: {
+            ".mdx": {
+                backgroundColor: 'background.pink.800',
+                padding: 4,
+                margin: 4,
+                color: 'color.200',
+                p: {
+                    fontSize: "lg",
+                    lineHeight: "1.4",
+                },
+            }
+        }
+    }
 })
 
 ReactDOM.render(
