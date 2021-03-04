@@ -4,8 +4,8 @@ import {useMediaQuery} from "@chakra-ui/react"
 import {DummyForm, FormInput} from './DummyForm';
 
 function App() {
-    const [name, setName] = React.useState("")
-    const [email, setEmail] = React.useState("")
+    const [name, setName] = React.useState<string>('')
+    const [email, setEmail] = React.useState<string>('')
     const handleChangeName = (event: React.ChangeEvent<HTMLInputElement>) => setName(event.target.value)
     const handleChangeEmail = (event: React.ChangeEvent<HTMLInputElement>) => setEmail(event.target.value)
     const [isLargerThan360] = useMediaQuery("(min-width: 360px)")

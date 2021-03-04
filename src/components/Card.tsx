@@ -1,4 +1,4 @@
-import {Box, Stack, Image, Heading, Text, Link} from '@chakra-ui/react'
+import {Box, Stack, Image, Heading, Text, Link, StyleProps} from '@chakra-ui/react'
 import React from "react";
 
 interface Props {
@@ -7,7 +7,7 @@ interface Props {
     linkText: string,
     iconSrc: string,
     sx: {
-        box: object
+        box: StyleProps
     },
     bgImageSrc: string,
     bgImageSrcHover: string
