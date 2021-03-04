@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 import {ChakraProvider} from "@chakra-ui/react"
 import {extendTheme} from "@chakra-ui/react"
 import CardComponent from "./CardComponentFold";
@@ -27,7 +26,8 @@ const fontSizes = {
   xs: "10px",
   sm: "12px",
   md: "14px",
-  lg: "16px"
+  lg: "16px",
+  xxl: "26px"
 }
 
 const Form = {
@@ -45,7 +45,7 @@ const Form = {
       borderRadius: 0,
     },
   },
-  sizes: {
+  size: {
     sm: {
       input: {
         fontSize: "0.75rem",
@@ -63,6 +63,7 @@ const Form = {
   },
   defaultProps: {
     size: "md",
+    variant: "primary"
   },
 }
 
@@ -83,8 +84,3 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
