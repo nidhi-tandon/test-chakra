@@ -98,38 +98,6 @@ export default {
                 variant: "primary"
             }
         },
-        CustomDesignButton: {
-            baseStyle: {
-                fontWeight: "bold",
-                borderRadius: "3px",
-                boxShadow: "2px 4px 9px 1px rgb(0 0 0 / 5%)",
-                border: "1px solid rgba(0,0,0,0.07)"
-            },
-            sizes: {
-                lg: {
-                    fontSize: "lg",
-                    padding: "10px 18px",
-                },
-                md: {
-                    fontSize: "md",
-                    padding: "5px 10px",
-                }
-            },
-            variants: {
-                primary: {
-                    backgroundColor: "background.blue.200",
-                    color: "color.200"
-                },
-                secondary: {
-                    backgroundColor: "background.100",
-                    color: "color.600"
-                }
-            },
-            defaultProps: {
-                size: "lg",
-                variant: "primary"
-            }
-        }
     },
     styles: {
         global: {
