@@ -1,10 +1,12 @@
 import React from 'react'
-import {Container, Flex} from "@chakra-ui/react"
+import {Container, Flex, Stack} from "@chakra-ui/react"
 import Card from './components/Card';
 
 /* eslint-disable import/no-webpack-loader-syntax */
 // @ts-ignore
 import Content from '!babel-loader!@mdx-js/loader!./Content.mdx'
+import CustomButton from "./components/Button";
+import {ArrowForwardIcon} from "@chakra-ui/icons";
 
 const customStyles = {
     box: {
@@ -48,8 +50,19 @@ const CardComponent: React.FC = () => {
                 />
             </Flex>
             <div className="mdx">
-                <Content />
+                <Content/>
             </div>
+            <Stack padding={2} margin={2}>
+                <Flex justifyContent="space-around">
+                    <CustomButton variant="primary" size="lg">Sign Up Now</CustomButton>
+                    <CustomButton variant="secondary" size="lg">Sign Up Now</CustomButton>
+                    <CustomButton variant="primary" size="lg">Sign Up Now</CustomButton>
+                    <CustomButton variant="secondary" size="lg" icon={<ArrowForwardIcon/>}>
+                        Sign Up Now</CustomButton>
+                    <CustomButton variant="primary" size="lg" icon={<ArrowForwardIcon/>} iconBg>
+                        Sign Up Now</CustomButton>
+                </Flex>
+            </Stack>
         </Container>
     );
 }
