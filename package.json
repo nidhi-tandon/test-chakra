@@ -28,7 +28,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && npx chakra-cli tokens src/theme.ts ",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -51,6 +51,6 @@
     ]
   },
   "devDependencies": {
-    "chakra-cli": "^1.0.1"
+    "@chakra-ui/cli": "^1.2.1"
   }
 }
